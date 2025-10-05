@@ -34,7 +34,7 @@
 
     /* Font weight */
     --font-weight-normal: 400;
-    --font-weight-medium: 400;
+    --font-weight-medium: 500;
     --font-weight-semibold: 600;
     --font-weight-bold: 700;
 
@@ -73,7 +73,7 @@ img{
 }
 
 .circle-wrapper {
-  width: 550px;             /* tamaño del contenedor */
+  width: 4000px;             /* tamaño del contenedor */
   height: 400px;
   border-radius: 50%;       /* hace el círculo */
   overflow: hidden;         /* recorta lo que sobresalga */
@@ -839,4 +839,3 @@ header .navbar{
   
   
   
-
