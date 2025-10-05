@@ -1,30 +1,290 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Smart Well Cities</title>
-  <link rel="stylesheet" href="style.css" />
-  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>www.SKYNET.com</title>
+    <!-- Linking Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <!-- Linking Swipper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-  <header>
-    <nav>
-      <ul>
-        <li><a href="#">Inicio</a></li>
-        <li><a href="#">Mapa</a></li>
-        <li><a href="#">Citas</a></li>
-        <li><a href="#">Contacto</a></li>
-      </ul>
-    </nav>
-  </header>
+    <!-- Header / Navbar-->
+    <header>
+        <nav class="navbar section-content">
+            <a href="#" class="nav-logo">
+                <h2 class="logo-text">SUN-TRACK</h2>
+            </a>
+            <ul class="nav-menu">
 
-  <main>
-    <h1>Ubicación Smile Center</h1>
-    <div id="map"></div>
-  </main>
+                <button id="menu-close-button" class="fas fa-times"></button>
 
-  <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
-  <script src="script.js"></script>
-</body>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Introduction</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#map" class="nav-link">Map</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#analysis" class="nav-link">Analysis</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#reference" class="nav-link">Reference</a>
+                </li>
+                
+            </ul>
+
+            <button id="menu-open-button" class="fas fa-bars"></button>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Section-->
+         <section class="hero-section">
+            <div class="section-content">
+                <div class="hero-details">
+                    <h2 class="title">Your Smart Option</h2>
+                    <h3 class="subtitle">Choose, walk and live safe</h3>
+                    <p class="description">Bienvenido xxxxxxxxxxxxxxx personalizado.</p>
+                    <div class="buttons">
+                        <a href="#" class="button start-now">TRY IT... NOW!</a>
+
+                    </div>
+                </div>
+                <div class="hero-image-wrapper circle-wrapper">
+                    <img src="images/Emblema Principal.png" alt="" class="hero-image circle"> 
+                </div>
+            </div>
+         </section>
+
+        <!-- Nosotros Section-->
+         <section class="about-section" id="map">
+            <div class="section-content">
+                <div class="about-image-wrapper">
+                    <img src="images/Portada About.png" alt="About" class="about-image">
+                </div>
+                <div class="about-details">
+                    <h2 class="section-title">¿Quiénes somos?</h2>
+                    <p class="text">
+                        En EDUCATEK no solo enseñamos; transformamos. Creamos tecnología educativa que desafía lo tradicional y potencia el aprendizaje real, como SKYNET, nuestro asistente virtual diseñado para que aprender se convierta en una experiencia clara, dinámica y poderosa. Nuestra misión es romper las barreras del conocimiento; nuestra visión, reescribir cómo el mundo aprende. Súmate al cambio. Aprende distinto. Aprende con SKYNET.
+                    </p>
+                
+                    <!-- Íconos sociales ahora dentro del bloque de texto -->
+                    <div class="social-link-list">
+                        <a href="#" class="social-link"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="#" class="social-link"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#" class="social-link"><i class="fa-brands fa-twitter"></i></a>
+                    </div>
+                </div>
+                
+            </div>
+         </section>
+
+         <!--Menu Section-->
+         <section class="menu-section" id="benefits">
+
+            <h2 class="section-title title-benefits">¿Qué ofrece SKYNET?</h2>
+
+
+            <div class="section-content">
+
+                <ul class="menu-list">
+                    <li class="menu-item">
+                        <img src="images/Aprendizaje Autonomo Img.png" alt="Aprendizaje Autonomo" class="menu-image">
+                        <h3 class="name">Aprendizaje Autónomo</h3>
+                        <p class="text">Estudia a tu ritmo y sin depender de horarios ni profesores.</p>
+                    </li>
+
+                    <li class="menu-item">
+                        <img src="images/Mejora Comprension Img.png" alt="Mejora Comprension" class="menu-image">
+                        <h3 class="name">Mejora Comprensión</h3>
+                        <p class="text">Explicaciones claras y dinámicas que facilitan el entendimiento real.</p>
+                    </li>
+
+                    <li class="menu-item">
+                        <img src="images/Respuestas Personalizadas Img.png" alt="Respuestas Personalizadas" class="menu-image">
+                        <h3 class="name">Respuestas Personalizadas</h3>
+                        <p class="text">SKYNET adapta sus respuestas según tu nivel y estilo de aprendizaje.</p>
+                    </li>
+
+                    <li class="menu-item">
+                        <img src="images/AhorraTiempo Img.png" alt="Ahorra Tiempo de Estudio" class="menu-image">
+                        <h3 class="name">Ahorra Tiempo de Estudio</h3>
+                        <p class="text">Enfócate en lo importante: SKYNET filtra la información clave por ti.</p>
+                    </li>
+
+                    <li class="menu-item">
+                        <img src="images/Adaptado Nivel Img.png" alt="Adaptado a tu Nivel" class="menu-image">
+                        <h3 class="name">Adaptado a tu Nivel</h3>
+                        <p class="text">Ya seas principiante o avanzado, siempre tendrás apoyo útil.</p>
+                    </li>
+
+                    <li class="menu-item">
+                        <img src="images/Disponibilidad Img.png" alt="Disponibilidad 24/7" class="menu-image">
+                        <h3 class="name">Disponibilidad 24/7</h3>
+                        <p class="text">Estudia cuando quieras, desde donde estés, sin límites.</p>
+                    </li>
+
+                </ul>
+            </div>
+         </section>
+
+         <!--Testimonials Section-->
+         <section class="testimonials-section" id="testimonials">
+            <h2 class="section-title">Testimonios</h2>
+            <div class="section-content">
+                <div class="slider-container swiper">
+                    <div class="slider-wrapper">
+                        <ul class="testimoninials-list swiper-wrapper">
+
+                            <li class="testimonial swiper-slide">
+                                <img src="images/Testimonio Fiorella.png" alt="User" class="user-image">
+                                <h3 class="name">Mg. Fiorella Sánchez, Profesora de Innovación Educativa – UPC</h3>
+                                <i class="feedback">“Integrar SKYNET en los talleres de programación nos permitió detectar brechas de comprensión mucho antes de las evaluaciones. Los estudiantes se sienten acompañados y motivados a aprender por cuenta propia.”</i>
+                            </li>
+
+                            <li class="testimonial swiper-slide">
+                                <img src="images/Testimonio Luis.png" alt="User" class="user-image">
+                                <h3 class="name">Luis Palacios, 5to ciclo de Ingeniería Electrónica – UNI</h3>
+                                <i class="feedback">“No entendía lógica booleana ni por YouTube. SKYNET me lo explicó con ejemplos de videojuegos. Hoy soy uno de los mejores de mi clase. Es más que un asistente, es un mentor digital.”</i>
+                            </li>
+
+                            <li class="testimonial swiper-slide">
+                                <img src="images/Testimonio Rafael.png" alt="User" class="user-image">
+                                <h3 class="name">Dr. Rafael Velarde, Profesor de Pensamiento Crítico – PUCP</h3>
+                                <i class="feedback">“SKYNET transforma la educación tradicional. Hemos iniciado un piloto en cursos de filosofía y pensamiento crítico, y los estudiantes interactúan más, preguntan mejor, y se sienten escuchados.”</i>
+                            </li>
+
+                            <li class="testimonial swiper-slide">
+                                <img src="images/Testimonio Rosario.png" alt="User" class="user-image">
+                                <h3 class="name">Rosario Méndez, Coordinadora Académica – Tecsup</h3>
+                                <i class="feedback">“Nuestros alumnos de carreras técnicas usan SKYNET para entender desde electrónica hasta mantenimiento predictivo. Es una herramienta inclusiva, sin curva de aprendizaje, y de impacto inmediato.”</i>
+                            </li>
+
+                            <li class="testimonial swiper-slide">
+                                <img src="images/Testimonio Andres.png" alt="User" class="user-image">
+                                <h3 class="name">Andrés Villanueva, Egresado de Ingeniería de Sistemas – Universidad de Lima</h3>
+                                <i class="feedback">“Yo trabajaba y estudiaba a la vez. SKYNET me ayudó a preparar mis tesis, entender papers y hasta practicar presentaciones orales. Es como un copiloto académico siempre disponible.”</i>
+                            </li>
+
+
+                        </ul>
+
+                        <div class="swiper-pagination"></div>
+                        <div class="swiper-slide-button swiper-button-prev"></div>
+                        <div class="swiper-slide-button swiper-button-next"></div>
+
+                    </div>
+                </div>
+            </div>
+         </section>
+
+         <!--Explore Section-->
+         <section class="gallery-section" id="explore">
+            <h2 class="section-title">Explora SKYNET</h2>
+            <div class="section-content">
+                <ul class="gallery-list">
+                    <li class="gallery-item">
+                        <img src="images/Img 1 Web.png" alt="Gallery" class="gallery-image">
+                    </li>
+                    <li class="gallery-item">
+                        <img src="images/Img 2 Web.png" alt="Gallery" class="gallery-image">
+                    </li>
+                    <li class="gallery-item">
+                        <img src="images/Img 3 Web.png" alt="Gallery" class="gallery-image">
+                    </li>
+                    <li class="gallery-item">
+                        <img src="images/Img 1 Institucional.png" alt="Gallery" class="gallery-image">
+                    </li>
+                    <li class="gallery-item">
+                        <img src="images/Img 2 Institucional.png" alt="Gallery" class="gallery-image">
+                    </li>
+                    <li class="gallery-item">
+                        <img src="images/Img 3 Institucional.png" alt="Gallery" class="gallery-image">
+                    </li>
+                </ul>
+            </div>
+         </section>
+
+         <!--Contact Section-->
+         <section class="contact-section" id="contact">
+            <h2 class="section-title">Contáctanos</h2>
+            <div class="section-content">
+                <ul class="contact-info-list">
+                    <li class="contact-info">
+                        <i class="fa-solid fa-location-crosshairs"></i>
+                        <p>Av. Gral. Salaverry 2255, San Isidro 15076, Lima, Perú</p>
+                    </li>
+                    <li class="contact-info">
+                        <i class="fa-regular fa-envelope"></i>
+                        <p>contacto@skynet.edu.pe</p>
+                    </li>
+                    <li class="contact-info">
+                        <i class="fa-solid fa-phone"></i>
+                        <p>(+51) 987 654 321</p>
+                    </li>
+                    <li class="contact-info">
+                        <i class="fa-regular fa-clock"></i>
+                        <p>Lunes - Viernes: 9:00 AM - 6:00 PM</p>
+                    </li>
+                    <li class="contact-info">
+                        <i class="fa-regular fa-clock"></i>
+                        <p>Sábados: 10:00 AM - 2:00 PM</p>
+                    </li>
+                    <li class="contact-info">
+                        <i class="fa-regular fa-ban"></i>
+                        <p>Domingos: Cerrado</p>
+                    </li>
+                    <li class="contact-info">
+                        <i class="fa-solid fa-globe"></i>
+                        <p>www.skynet.com</p>
+                    </li>
+                </ul>
+
+                <form action="#" class="contact-form">
+                    <input type="text" placeholder="Tu nombre" class="form-input" required>
+                    <input type="email" placeholder="Tu email" class="form-input" required>
+                    <textarea placeholder="Tu mensaje" class="form-input" required></textarea>
+
+                    <button class="submit-button">Enviar</button>
+
+                </form>
+
+            </div>
+         </section>
+
+        <!--Footer Section-->
+        <section class="footer-section">
+            <div class="section-content">
+                <p class="copyright-text">© 2025 SKYNET</p>
+
+                 <!-- Íconos sociales ahora dentro del bloque de texto -->
+                 <div class="social-link-list">
+                    <a href="#" class="social-link"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#" class="social-link"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#" class="social-link"><i class="fa-brands fa-twitter"></i></a>
+                </div>
+
+                <p class="policy-text">
+                    <a href="#" class="policy-link">Privacy policy</a>
+                    <span class="separator">•</span>
+                    <a href="#" class="policy-link">Refund policy</a>
+                </p>
+
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+    <!--Linking Swipper Script-->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!--Linking Custom Script-->
+    <script src="script.js"></script>
+
+</body>  
 </html>
